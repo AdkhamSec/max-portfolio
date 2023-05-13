@@ -2,12 +2,12 @@ function About() {
   return (
     <section className='container mx-auto px-2 py-44'>
       <div className='text-center'>
-        <h1 className='text-7xl font-bold'>About.</h1>
+        <h1 className='text-5xl font-bold md:text-7xl'>About.</h1>
         <p className='text-2xl font-bold'> — See more info about me —</p>
       </div>
-      <div className=" flex-end mx-auto my-20 flex h-[500px] flex-col justify-center bg-[url('src/assets/about.jpg')] bg-contain bg-no-repeat lg:w-[870px]">
+      <div className=" flex-end mx-auto my-20 flex h-[500px] max-w-[870px] flex-col justify-center bg-[url('src/assets/about.jpg')] bg-contain bg-no-repeat">
         <div className='mb-20 text-end'>
-          <h1 className='text-7xl font-bold text-fuchsia-500'>Makhmud.</h1>
+          <h1 className='text-5xl font-bold text-fuchsia-500 md:text-7xl'>Makhmud.</h1>
           <h1 className='text-2xl '>Web developer.</h1>
         </div>
       </div>

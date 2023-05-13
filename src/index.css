@@ -12,3 +12,7 @@
   font-family: Rubik;
   letter-spacing: 0.05rem;
 }
+
+.text-shadow {
+  text-shadow: #282828 0 0 20px;
+}
