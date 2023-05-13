@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Rubik;
+  src: url('src/assets/Noto_Sans_Lao_Looped/NotoSansLaoLooped-VariableFont_wdth,wght.ttf');
+}
+
+* {
+  color: white;
+  font-family: Rubik;
+  letter-spacing: 0.05rem;
+}
