@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        custom: '0 0 35px rgba(255, 255, 255, 0.3)',
+      },
       backgroundImage: {
         hero: "url('/src/assets/hero.jpg')",
       },
@@ -31,6 +34,7 @@ export default {
 
       colors: {
         secondary: '#a1a1a1',
+        glass: 'rgba(255,255,255,255,  0.4)',
       },
       fontWeight: {
         bold: '650',
