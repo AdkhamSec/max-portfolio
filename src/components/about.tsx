@@ -12,7 +12,9 @@ function About() {
         </div>
       </div>
       <div className='mx-auto my-10 max-w-[500px] text-justify text-2xl text-secondary'>
-        I am a web develover who loves designing visually stunning plus minimalist User Interfaces more than anything else, with the exception of solving logical problems and programming chanllanges. Always eager to try out new things in web space and comtribute to Open Source.
+        I am a web develover who loves designing visually stunning plus minimalist UI above all, with the exception of
+        solving logical problems and programming chanllanges. Always eager to try out new things in web space and
+        comtribute to Open Source.
       </div>
 
       <div className='my-10 text-center text-2xl'>
