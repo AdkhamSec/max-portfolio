@@ -12,10 +12,7 @@ function About() {
         </div>
       </div>
       <div className='mx-auto my-10 max-w-[500px] text-justify text-2xl text-secondary'>
-        As a web developer, my core competency lies in front-end development, where I utilize industry- leading
-        technologies such as React, TailwindCSS, and Nextjs to craft visually stunning and responsive websites that are
-        optimized for seamless user experience on all devices. I continuously strive to learn new technologies and best
-        practices in web development to stay on the cutting edge of the industry.
+        I am a web develover who loves designing visually stunning plus minimalist User Interfaces more than anything else, with the exception of solving logical problems and programming chanllanges. Always eager to try out new things in web space and comtribute to Open Source.
       </div>
 
       <div className='my-10 text-center text-2xl'>
