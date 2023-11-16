@@ -1,4 +1,4 @@
-import { FaFacebookF, FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 
 function MainPage() {
   return (
@@ -21,10 +21,18 @@ function MainPage() {
             </div>
 
             <div className='flex justify-end space-x-5 text-2xl'>
-              <FaTelegramPlane />
-              <FaGithub />
-              <FaFacebookF />
-              <FaLinkedin />
+              <a href='https://t.me/makhmud17'>
+                <FaTelegramPlane />
+              </a>
+              <a href='https://github.com/max-17'>
+                <FaGithub />
+              </a>
+              <a href='https://www.linkedin.com/in/makhmud-dev/'>
+                <FaLinkedin />
+              </a>
+              <a href='mailto:max.1724dn@gmail.com'>
+                <FaEnvelope />
+              </a>
             </div>
           </div>
         </div>
