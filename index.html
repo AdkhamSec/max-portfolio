@@ -12,10 +12,12 @@
   </head>
   <body>
     <section id="s-1" >
-        <div data-aos="fade-in" 
-        data-aos-duration="2500">
-            <h1 >I am <br> An Autodidact <br/> Developer</h1>
-        </div>
+            <h1 class="main-text"> 
+
+                Full-Stack
+               <br/> 
+              Web Developer
+          </h1>
     </section>
 
     <section id="s-2">
@@ -84,5 +86,13 @@
   </body>
   <script>
     AOS.init();
+    
+    document.addEventListener('mousemove', (e) => {
+  const mainText = document.querySelector('.main-text');
+  const { innerWidth: width, innerHeight: height } = window;
+  let moveX = (e.clientX / width) * 100;  
+  let moveY = moveX> mainText.width ? mainText.width : moveX;
+  mainText.style.backgroundPosition = `${100-moveX}% 0`;
+});
   </script>
 </html>
