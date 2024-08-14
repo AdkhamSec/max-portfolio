@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* BEGIN: be15d9bcejpp */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -20,50 +23,48 @@ html {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     letter-spacing: 0.7px;
     transition: all 0.3s  ease;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-   
-}
-
-/* section > :last-child {
- border: 1px solid green;
-} */
-
-@media screen and (max-width: 768px) {
-    section .flex {
-        flex-direction: column;
-    }
-    section .flex h1 {
-        align-self: center;
-    }
+    align-items: center;
+    /* margin: 0 8px; */
 }
 
 h1 {
     font-size: 80px;
-    padding: 0 20px;
     line-height: 1.05;
-    margin-top: 30px !important;
-    margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 h2 {
     font-size: 26px;
-    margin: 34px 20px 0px;
     line-height: 1.2;
-    max-width: 500px;
 }
 
+
 p {
+    word-break: keep-all;
+    hyphens: auto;
+    text-align: justify;
     font-size: 20px;
     line-height: 1.5;
-    margin: 15px 20px 0px;
-    max-width: 500px;
     letter-spacing: normal;
+
+}
+
+.sub-section{
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
@@ -71,21 +72,10 @@ a {
     color: rgb(130, 130, 130);
 }
 
-.flex {
-    display: flex;
-}
 
-.self-top {
-    margin-top: 0;
-    align-self: flex-start;
-}
-
-footer{
-    margin-bottom: 5px;
-    text-align: center;
-}
 
 .main-text {
+    align-self: center;
     background: radial-gradient(circle, #fff,#000000);
     -webkit-background-clip: text;
     background-size: 300%;
@@ -114,6 +104,24 @@ footer{
     0% { opacity: 0%;  background-position: left }
     50% { background-position: left;}
     100% { background-position: center; opacity: 100%; }
-    /* 100% { background-position: center; } */
  }
 
+  .stats-card {
+    width: 46%;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0px 6px rgb(255, 255, 255);
+    max-width: 300px;
+  }
+  
+  .stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    text-wrap: nowrap;
+    margin: 0;
+  }
+  
+  
