@@ -193,18 +193,17 @@
   const languagesCard = document.getElementById('languages-stat');
   const codeTimeCard = document.getElementById('code-time-stat');
 
-  let codeTimeStats
-  let languageStats
   fetch('https://wakatime.com/share/@maxmud_dev/af7312a3-a597-4758-904e-0fb2515789df.json').then(
     async res => {
-      codeTimeStats = await res.json()
-      const totalHours = codeTimeStats.data.grand_total.total_seconds_including_other_language / 3600
-      const dailyAverage = codeTimeStats.data.grand_total.daily_average_including_other_language / 3600
-      console.log(Math.round(totalHours));
-      console.log(Math.round(dailyAverage));
-      console.log(codeTimeStats);
+
+      const codeTimeStats = (await res.json()).data
+
+      const totalHours = codeTimeStats.grand_total.total_seconds_including_other_language / 3600
+
+      const dailyAverage = codeTimeStats.grand_total.daily_average_including_other_language / 3600
 
       const statValues = codeTimeCard.querySelectorAll('.stat-value')
+
       statValues[0].innerText = `${Math.round(totalHours)} hrs`
       statValues[1].innerText = `${Math.round(dailyAverage)} hrs/day`
 
@@ -214,11 +213,12 @@
 
   fetch('https://wakatime.com/share/@maxmud_dev/c66e9eb3-4013-48e5-a5e4-a65da31b6469.json').then(
     async res => {
-      languageStats = (await res.json()).data
-      console.log(languageStats)
+      const languageStats = (await res.json()).data
 
       const statValues = languagesCard.querySelectorAll('.stat-value')
+
       const statNames = languagesCard.querySelectorAll('.stat-name')
+
       statValues[0].innerText = `${languageStats[0].percent} %`
       statNames[0].innerText = languageStats[0].name
       statValues[1].innerText = `${languageStats[1].percent} %`
